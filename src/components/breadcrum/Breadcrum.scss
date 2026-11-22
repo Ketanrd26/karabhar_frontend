@@ -1,0 +1,46 @@
+.main-breadcrum {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--unit) / 3);
+  padding: 12px 0px;
+
+  .arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home-icon {
+    font-size: 20px;
+    color: var(--greeen);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .arrow-icon {
+    font-size: 16px;
+    color: var(--greeen);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .crum-name{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--accent);
+    line-height: 100%;
+    text-transform: capitalize;
+  }
+}
+
+@media only screen and (max-width:540px){
+.main-breadcrum {
+  flex-wrap: wrap;
+  a,.crum-name{
+    width: fit-content;
+    font-size: 12px;
+  }
+}
+}

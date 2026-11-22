@@ -1,0 +1,66 @@
+ .top-section {
+     display: flex;
+     align-items: center;
+     gap: calc(var(--unit));
+     padding: 10px;
+ }
+
+ .upi-list {
+     width: 100%;
+     padding: 10px;
+
+     .upi-item {
+         border: 1px solid #ddd;
+         border-radius: 8px;
+         padding: 12px;
+         margin-bottom: 12px;
+         background: #fff;
+
+         .upi-header {
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+
+             .app-name {
+                 font-size: 12px;
+                 font-weight: 500;
+                 background: #f5f5f5;
+                 border: 1px solid #ccc;
+                 padding: 2px 8px;
+                 border-radius: 6px;
+             }
+
+             .icon-btn {
+                 border: 1px solid var(--border-color);
+                 cursor: pointer;
+                 font-size: 14px;
+                 color: #444;
+                 padding: 6px;
+                 border-radius: calc(var(--unit) / 2);
+                 display: flex;
+                 align-items: center;
+                 justify-content: center;
+
+
+             }
+         }
+
+         .upi-details {
+             display: flex;
+             align-items: center;
+             margin-top: 8px;
+
+             .upi-logo {
+                 width: 28px;
+                 height: 28px;
+                 margin-right: 10px;
+                 border-radius: 50%;
+             }
+
+             .upi-id {
+                 font-size: 16px;
+                 font-weight: 500;
+             }
+         }
+     }
+ }

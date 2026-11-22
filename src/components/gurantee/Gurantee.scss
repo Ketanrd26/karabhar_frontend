@@ -1,0 +1,117 @@
+.gurantee-parent {
+    padding: 50px 0px;
+
+    .gurantee-cont {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: calc(var(--unit) / 2);
+
+        .wrap-main {
+            box-shadow: var(--shadow);
+            padding: 10px;
+            border-radius: calc(var(--unit) / 2);
+            display: flex;
+            gap: calc(var(--unit) / 2);
+            background: white;
+
+            .free-shipping {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: calc(var(--unit));
+                padding: 10px;
+
+                img {
+                    width: 40px;
+                    aspect-ratio: 1;
+                    color: var(--accent);
+                }
+
+                .shipping {
+                    display: flex;
+                    gap: calc(var(--unit) / 3);
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .gurantee-parent {
+        padding: 50px 10px;
+
+        .gurantee-cont {
+            .wrap-main {
+                align-items: center;
+                justify-content: center;
+
+
+                .free-shipping {
+                    border-bottom: 1px solid var(--border-color);
+                    padding: 5px;
+                    gap: calc(var(--unit) / 2);
+
+
+                    img {
+                        width: 26px;
+                    }
+
+                    .shipping {
+                        h4 {
+                            font-size: 14px;
+                        }
+
+                        p {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .gurantee-parent {
+        .gurantee-cont {
+            .wrap-main {
+                flex-wrap: wrap;
+            }
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .gurantee-parent {
+        padding: 50px 10px;
+
+        .gurantee-cont {
+            .wrap-main {
+                flex-direction: column;
+                width: 100%;
+
+                .free-shipping {
+                    width: 100%;
+                    gap: calc(var(--unit));
+                    justify-content: start;
+
+                    img {
+                        width: 30px;
+                    }
+
+                    .shipping {
+                        h4 {
+                            font-size: 18px;
+                        }
+
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

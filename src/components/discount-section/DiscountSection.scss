@@ -1,0 +1,40 @@
+.discount-parent {
+  padding: 50px 0px;
+  .discount-cont {
+    background: url("../../assets/Discount_Bannar.webp");
+    height: 430px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: calc(var(--unit));
+    border-radius: calc(var(--unit) / 2);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 1000px) {
+  .discount-parent {
+    padding: 50px 0px;
+    .discount-cont {
+      .left {
+        width: 60%;
+      }
+      .right {
+        width: 40%;
+        h2 {
+          color: white;
+          font-size: 30px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .discount-parent {
+    display: none;
+  }
+}

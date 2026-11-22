@@ -1,0 +1,45 @@
+.notfound-parent {
+  height: 100vh;
+  .notfound-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: calc(var(--unit));
+
+    .notfound-404 {
+      font-size: 123px;
+      font-weight: bolder;
+      display: flex;
+      justify-content: center;
+      gap: 0px;
+      margin-bottom: 30px;
+
+      span {
+        width: 100px;
+        height: 120px;
+        display: inline-block;
+        background-size: cover;
+        background-position: center;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+
+    .notfound-title {
+      font-size: 28px;
+      margin-bottom: 10px;
+
+      span {
+        color: var(--green);
+        font-weight: 700;
+      }
+    }
+
+    .notfound-description {
+      max-width: 40ch;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  }
+}

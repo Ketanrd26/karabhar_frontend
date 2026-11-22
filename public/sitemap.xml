@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://www.jungleboosh.com/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://www.jungleboosh.com/products</loc>
+    <priority>0.9</priority>
+  </url>
+
+    <url>
+    <loc>https://www.jungleboosh.com/Product-details?productName=Misal%20Masala</loc>
+    <priority>0.8</priority>
+    </url>
+
+    <url>
+    <loc>https://www.jungleboosh.com/Product-details?productName=Panchanmruth%20Soap</loc>
+    <priority>0.8</priority>
+    </url>
+
+    <url>
+    <loc>https://www.jungleboosh.com/Product-details?productName=Wood%20Kathwat%20(सागवान%20काठवठ)</loc>
+    <priority>0.8</priority>
+    </url>
+
+    <url>
+  <loc>https://www.jungleboosh.com/Product-details?productName=Chawanprash</loc>
+  <priority>0.8</priority>
+</url>
+
+    <url>
+    <loc>https://www.jungleboosh.com/Product-details?productName=Mukhwas</loc>
+    <priority>0.8</priority>
+    </url>
+
+    <url>
+    <loc>https://www.jungleboosh.com/Product-details?productName=Dates%20Syrup</loc>
+    <priority>0.8</priority>
+    </url>
+
+    <url>
+    <loc>https://www.jungleboosh.com/Product-details?productName=Hair%20Oil</loc>
+    <priority>0.8</priority>
+    </url>
+
+    <url>
+    <loc>https://www.jungleboosh.com/Product-details?productName=Janta%20Express%20Agarbatti</loc>
+    <priority>0.8</priority>
+    </url>
+
+  <url>
+    <loc>https://www.jungleboosh.com/contact</loc>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>

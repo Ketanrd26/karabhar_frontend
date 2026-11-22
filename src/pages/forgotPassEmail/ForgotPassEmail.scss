@@ -1,0 +1,109 @@
+.forgotpassemail{
+    width: 100%;
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    .left_image{
+        width: 40%;
+        height: 100%;
+        background-image: url("../../assets/jute_bg.png");
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        .border_top{
+            width: 100%;
+            height: 40px;
+            background-image: url("../../assets/designLabel.png");
+            position: absolute;
+            left: 0;
+            top: 5%;
+        }
+        .border_bottom{
+            width: 100%;
+            height: 40px;
+            background-image: url("../../assets/designLabel.png");
+            position: absolute;
+            left: 0;
+            bottom: 5%;
+        }
+
+        img{
+            width: 200px;
+        }
+    }
+
+    .right_panel{
+        width: 60%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        form{
+            width: 50%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: calc(var(--unit) + 5px);
+
+            .top_content{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                gap: calc(var(--unit) / 2);
+            }
+
+            .btn-pri{
+                width: 100%;
+            }
+
+            .navigatelogin{
+                transform: translateY(-10px);
+                color: var(--accent);
+            }
+        }
+    }
+}
+
+
+@media(max-width:900px){
+    .forgotpassemail{
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 20px;
+
+        .left_image{
+            width: 100%;
+            height: auto;
+            padding: 20px 0px;
+
+            .border_bottom, .border_top{
+                display: none;
+            }
+
+            img{
+                width: 150px;
+            }
+        }
+
+        .right_panel{
+            width: 100%;
+            height: auto;
+            padding: 20px 0px;
+
+            form{
+                width: 80%;
+            }
+        }
+    }   
+}

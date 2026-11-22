@@ -1,0 +1,59 @@
+.send-otp-parent {
+  width: 100%;
+  height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .left {
+    width: 40%;
+    height: 100%;
+    background-image: url("../../assets/jute_bg.png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .right {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    form {
+      width: 80%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: var(--unit);
+
+      h2 {
+        line-height: 100%;
+      }
+
+      .link {
+        color: var(--accent);
+        font-size: calc(var(--unit) - 2px);
+        transform: translateY(-8px);
+      }
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .send-otp-parent {
+    flex-direction: column;
+    padding-bottom: 70px;
+
+    .left,
+    .right {
+      width: 100%;
+      height: auto;
+      padding: var(--unit) 0px;
+    }
+  }
+}

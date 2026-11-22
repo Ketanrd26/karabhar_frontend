@@ -1,0 +1,235 @@
+        .filter {
+          width: 100%;
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: calc(var(--unit) * 1.5);
+          // border-right: 1px solid gray;
+
+          .categories {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+           overflow-y: auto;
+            gap: calc(var(--unit) / 2);
+            transition: var(--trans);
+            height: 400px;
+            // background-color: red;
+
+            &.chip_cat {
+              height: auto;
+            }
+
+            &.stars {
+              height: auto;
+            }
+
+            &.active {
+              height: 30px;
+              overflow: hidden;
+            }
+
+            .label {
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              cursor: pointer;
+
+              p {
+                font-size: 18px;
+                font-weight: 500;
+                color: black;
+              }
+
+              .arrow {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: calc(var(--unit) * 1.5);
+              }
+            }
+
+            .items {
+              display: flex;
+              width: 100%;
+              flex-direction: column;
+              justify-content: center;
+              align-items: flex-start;
+              overflow-y: auto;
+              gap: calc(var(--unit) / 2);
+              //  height: ;
+
+              &.vendors {
+                overflow: hidden;
+
+                .list{
+                  overflow-y: auto;
+                  width: 100%;
+                }
+
+              }
+
+              .button_see_more {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                p {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  line-height: 100%;
+                  gap: 5px;
+                  color: black;
+
+                  span {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                  }
+                }
+              }
+
+              &.chips {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+
+                .MuiChip-root {
+                  cursor: pointer;
+                  &.active {
+                    background-color: var(--accent);
+                    color: var(--white);
+                  }
+                }
+              }
+
+              .top {
+                width: 100%;
+                position: relative;
+                padding: 0px 5px;
+                // overflow: hidden;
+
+                input {
+                  width: 100%;
+                  height: 40px;
+                  border-radius: 10px;
+                  outline: none;
+                  border: 1px solid grey;
+                  padding: 5px 10px;
+                }
+
+                .icon {
+                  position: absolute;
+                  top: 50%;
+                  right: 5%;
+                  transform: translateY(-50%);
+                }
+              }
+
+              .MuiFormControlLabel-root {
+                .MuiButtonBase-root {
+                  padding-left: 0;
+                  padding-top: 0px;
+                  padding-bottom: 0px;
+                }
+
+                .MuiTypography-root {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  gap: calc(var(--unit) / 4);
+
+                  svg {
+                    color: orange;
+                  }
+                }
+              }
+
+              .MuiFormControlLabel-root {
+                margin: 0;
+              }
+
+              .item {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: calc(var(--unit) / 2);
+                padding: calc(var(--unit) / 4) 0px;
+
+                .item_count {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+
+                  color: var(--accent);
+                }
+              }
+            }
+          }
+
+          .range {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            gap: calc(var(--unit) / 2);
+            transition: var(--trans);
+
+            .label {
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              cursor: pointer;
+
+              p {
+                font-size: 18px;
+                font-weight: 500;
+                color: black;
+              }
+
+              .arrow {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: calc(var(--unit) * 1.5);
+              }
+            }
+
+            .items {
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-start;
+              align-items: flex-start;
+
+              p {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: calc(var(--unit) / 2);
+
+                span {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  color: black;
+                  font-family: "Alata", serif;
+                }
+              }
+
+              .MuiSlider-root {
+                color: var(--accent);
+              }
+            }
+          }
+        }
+

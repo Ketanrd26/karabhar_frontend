@@ -1,0 +1,91 @@
+.personal-parent {
+    width: 70%;
+    height: auto;
+  .personal-cont {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--unit));
+    .top-personal {
+    }
+    .basic-info {
+    
+      border: 1px solid var(--border-color);
+      padding: var(--unit);
+      border-radius: calc(var(--unit) / 2);
+      display: flex;
+      flex-direction: column;
+      gap: calc(var(--unit));
+
+      .upload-photo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .photo {
+          display: flex;
+          gap: calc(var(--unit));
+          align-items: center;
+          justify-content: center;
+
+          .camera {
+            background: var(--bg-color);
+            border-radius: 100%;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            span {
+              color: var(--accent);
+              font-size: 50px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+
+          .up-photo {
+            display: flex;
+            flex-direction: column;
+            gap: calc(var(--unit));
+
+            .link-photo {
+              padding: 8px;
+              border-radius: calc(var(--unit) / 2);
+              border: 1px solid var(--accent);
+              color: var(--accent);
+              width: fit-content;
+            }
+          }
+        }
+        .edit {
+          border: 1px solid var(--border-color);
+          border-radius: calc(var(--unit) / 2);
+          width: fit-content;
+          padding: calc(var(--unit) / 2) calc(var(--unit));
+          color: var(--accent);
+        }
+      }
+
+      .input-section {
+        width: 100%;
+        display: flex;
+        gap: calc(var(--unit));
+    
+
+        .text {
+          width: 50%;
+        }
+
+        .date-gender {
+            width: 50%;
+          display: flex;
+          gap: calc(var(--unit));
+        }
+      }
+    }
+    a {
+      color: var(--red);
+    }
+  }
+}

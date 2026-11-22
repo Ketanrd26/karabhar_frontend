@@ -1,0 +1,15 @@
+.header_b_parent{
+    width: 100%;
+    background-color: var(--accent);
+    height: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    marquee{
+        color: white;
+    }
+
+}
+

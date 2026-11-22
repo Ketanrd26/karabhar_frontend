@@ -1,0 +1,101 @@
+.deals-parent {
+    position: relative;
+    padding-bottom: 50px;
+
+    .deals-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(177, 75, 52, 0.100);
+        opacity: 0.7;
+        background: url("../../assets/jute_bg.png");
+        z-index: -1;
+
+
+    }
+
+    .label {
+        background: url("../../assets/designLabel.png");
+        width: 100%;
+        position: absolute;
+        height: 50px;
+        left: 0;
+        bottom: 6%;
+    }
+
+
+
+
+
+    .deals-cont {
+        padding: 60px 10px;
+
+        .cont-wrapper {
+            width: calc(100 / 4 - var(--unit));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--unit);
+
+
+
+            .box {
+                display: flex;
+                flex-direction: column;
+                gap: calc(var(--unit));
+                padding: 10px;
+
+                .top-sec {}
+
+                .bottom-sec {
+                    border: 1px solid var(--border-color);
+                    padding: 16px;
+                    background: var(--white);
+                    border-radius: calc(var(--unit) / 2);
+
+                    .hot-deals-list {
+                        display: flex;
+                        align-items: center;
+                        gap: calc(var(--unit));
+
+                        img {
+                            width: 20%;
+                        }
+
+                        .content {
+                            display: flex;
+                            flex-direction: column;
+                            gap: calc(var(--unit) / 2);
+
+                        }
+                    }
+                }
+
+
+            }
+
+            .bannerimg {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .top-sec {}
+
+                .bannerimg-bottom-sec {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        width: 100%;
+                        border-radius: calc(var(--unit) / 2);
+                    }
+                }
+            }
+        }
+
+    }
+}

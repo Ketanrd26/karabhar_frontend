@@ -1,0 +1,192 @@
+.vendors-parent {
+  position: relative;
+  padding-bottom: 60px;
+
+  .vendors-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(177, 75, 52, 0.1);
+    opacity: 0.7;
+    background: url("../../assets/jute_bg.png");
+    z-index: -1;
+  }
+
+  .label {
+    background: url("../../assets/designLabel.png");
+    width: 100%;
+    position: absolute;
+    height: 50px;
+    left: 0;
+    bottom: 1%;
+  }
+
+  .vendors-cont {
+    padding: 60px 10px;
+    display: flex;
+    gap: calc(var(--unit));
+
+    .wrapper-vendors {
+      display: flex;
+      flex-direction: column;
+      gap: calc(var(--unit));
+      justify-content: space-between;
+      width: 100%;
+
+      .vendors-heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        .top-vendors-view {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: calc(var(--unit) / 2);
+
+          span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: calc(var(--unit) / 2);
+          }
+        }
+      }
+
+      .bottom-vendors {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: calc(var(--unit));
+        flex-wrap: wrap;
+
+        .vendors-card {
+          width: 250px;
+          height: auto;
+          border: 1px solid rgba(0, 0, 0, 0.301);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: calc(var(--unit) / 2);
+          border-radius: calc(var(--unit) / 2);
+          overflow: hidden;
+          background-color: white;
+
+          .image {
+            width: 100%;
+            height: 300px;
+            background-color: white;
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+
+          .content {
+            width: 100%;
+            height: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+
+            h4 {
+              // padding: 8px 0px 0px 0px;
+              text-align: center;
+            }
+
+            // p {
+            //   padding: 0px 0px 10px 0px;
+            // }
+
+            .know_more_btn {
+              width: 100%;
+              display: flex;
+              justify-content: flex-end;
+              align-items: center;
+              gap: 5px;
+              font-size: 12px;
+              color: var(--accent);
+
+
+              &:hover{
+                color: black;
+              }
+
+              span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .vendors-parent {
+    .vendors-cont {
+      .wrapper-vendors {
+        .bottom-vendors {
+          .vendors-card {
+            width: 250px;
+            height: auto;
+            gap: calc(var(--unit) / 2);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .vendors-parent {
+    .vendors-cont {
+      .wrapper-vendors {
+        .bottom-vendors {
+          gap: calc(var(--unit) / 2);
+          .vendors-card {
+            width: calc(50% - 8px);
+            height: auto;
+            gap: calc(var(--unit) / 2);
+
+            .image {
+              height: 200px;
+            }
+
+            .content {
+              width: 100%;
+              height: 40%;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              gap: 5px;
+
+              h4 {
+                font-size: 16px;
+              }
+
+              p {
+                text-align: center;
+                font-size: 13px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

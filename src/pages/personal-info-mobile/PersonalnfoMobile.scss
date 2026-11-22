@@ -1,0 +1,102 @@
+ .top-section {
+     display: flex;
+     align-items: center;
+     gap: calc(var(--unit));
+     padding: 10px;
+ }
+
+ .profile-form {
+     width: 100%;
+     padding: 20px;
+     display: flex;
+     flex-direction: column;
+     gap: var(--unit);
+
+     .photo-section {
+         display: flex;
+         gap: var(--unit);
+         align-items: center;
+         justify-content: center;
+
+         .photo-circle {
+             width: 80px;
+             height: 80px;
+             border-radius: 50%;
+             border: 2px solid #ddd;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             margin: 0 auto 10px auto;
+             overflow: hidden;
+
+             img {
+                 width: 100%;
+                 height: 100%;
+                 object-fit: cover;
+             }
+
+             span {
+                 font-size: 24px;
+                 color: #aaa;
+             }
+         }
+
+         .upload-photo-wrap {
+
+             .upload-btn {
+                 display: flex;
+                 flex-direction: column;
+                 border: 1px solid var(--accent);
+                 color: var(--accent);
+                 padding: 6px 12px;
+                 border-radius: 6px;
+                 cursor: pointer;
+                 font-size: 14px;
+                 width: fit-content;
+             }
+         }
+
+
+     }
+
+     
+
+     h3 {
+         font-size: 16px;
+     }
+
+     label {
+         font-size: 14px;
+         display: block;
+         margin-top: 12px;
+         margin-bottom: 4px;
+     }
+
+     input,
+     select {
+         width: 100%;
+         padding: 10px;
+         border: 1px solid #ccc;
+         border-radius: 6px;
+         font-size: 14px;
+     }
+
+     h4{
+        padding-top: 20px;
+     }
+
+     .delete-section {
+         margin-top: 20px;
+         text-align: left;
+
+         .delete-btn {
+             background: none;
+             border: none;
+             color: #d33;
+             font-weight: bold;
+             cursor: pointer;
+             font-size: 14px;
+             padding: 0;
+         }
+     }
+ }
