@@ -4,7 +4,7 @@ const HeaderBottom = () => {
   return (
     <>
 <div class="header_b_parent">
-    <marquee>Made in small, limited batches to ensure peak freshness without artificial preservatives—secure yours before it's gone!</marquee>
+    <marquee>Karobhar – Ghar Se Ghar Tak | Discover Local Brands | Shop Unique Products | Support Small</marquee>
 </div>
     </>
   )

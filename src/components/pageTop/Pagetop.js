@@ -6,13 +6,13 @@ const Pagetop = ({heading , para}) => {
     <>
       <div className="parent page_top_parent bg-img-cover">
         <div className="cont page_top_cont">
-          <div className="left_page_top">
+          {/* <div className="left_page_top"> */}
             <h2> {heading}</h2>
             <p>
              {para}
             </p>
-          </div>
-          <div className="right_page_top"></div>
+          {/* </div> */}
+          {/* <div className="right_page_top"></div> */}
         </div>
       </div>
     </>

@@ -65,43 +65,40 @@ const About = () => {
       </Helmet>
 
       <Pagetop
-        heading="About JungleBoosh"
-        para=" Jungle boosh brings you authentic, traditional foods made from
-              carefully sourced ingredients, grown with patience, honesty, and
-              respect for the land. From farms to your home, every product
-              carries purity, heritage, and trust."
+        heading="About Karobhar"
+        para="Karobhar, a brand by Wave Solutions, empowers small businesses, local entrepreneurs, and emerging brands to showcase their products and reach more customers. Our mission is to turn local businesses into growing opportunities by connecting products, people, and possibilities on one platform."
       />
 
       <div className="about_parent parent">
         <div className="about_cont cont">
           <div className="ab_left bg-img-cover"></div>
           <div className="ab_right">
-            <h3>The Story Behind Jungle Boosh</h3>
+            <h3>The Story Behind Karobhar</h3>
             <p>
-              Jungle Boosh is a curated online store built to help India’s small
-              creators reach people digitally. We work with independent
-              makers—farmers, artisans, and local producers—who focus on
-              creating quality products, while we take care of presentation,
-              quality checks, and delivery.
+              Karobhar, a brand by Wave Solutions, is a curated online
+              marketplace built to help small businesses, local entrepreneurs,
+              and emerging brands reach customers digitally. We help businesses
+              showcase their products, build their identity, and grow through
+              online opportunities.
             </p>
             <p>
-              Many skilled creators across India make exceptional products but
-              lack access to technology, branding, or online marketplaces.
-              Jungle Boosh exists to bridge that gap. We bring their products to
-              a wider audience without changing how they create or what they
-              stand for.
+              Many talented entrepreneurs across India create amazing products
+              but lack access to technology, branding, or online marketplaces.
+              Karobhar exists to bridge that gap — giving small businesses a
+              platform to grow without losing their individuality or the story
+              behind their products.
             </p>
 
             <p>
-              Our role is simple: curate honestly, maintain quality, and build
-              trust between creators and customers. From food to everyday
-              cultural products, every item on Jungle Boosh is selected for its
-              genuineness, care, and the people behind it.
+              Our role is simple: connect businesses with customers, make
+              products accessible, and create opportunities for growth. From
+              local makers to emerging brands, every business on Karobhar
+              represents passion, hard work, and the ambition to grow.
             </p>
             <p>
-              We believe that when creators get fair access to markets and
-              customers get transparency, meaningful and sustainable growth
-              follows naturally.
+              We believe that when small businesses get the right platform,
+              support, and visibility, they can turn small beginnings into big
+              opportunities. Karobhar is built to make that growth possible.
             </p>
           </div>
         </div>
@@ -110,7 +107,7 @@ const About = () => {
       <div className="faq_parent parent">
         <div className="faq_cont cont">
           <h3> Have questions? We're happy to answer them! </h3>
-          
+
           {faq.map((item, index) => (
             <div
               className={faqIndex === index ? "faq_list active" : "faq_list"}

@@ -10,26 +10,25 @@ import mastercard from "../../assets/Mastercard-logo.png";
 import visa from "../../assets/Visa_Logo.png";
 import razorpay from "../../assets/razorpay-icon.webp";
 
-
 function Footer() {
   return (
     <>
-  
       <div className="footer_parent parent">
         <div className="footer_cont cont">
           <div className="left">
             <img src={logo} alt="" />
             <p>
-              JungleBoosh brings you closer to nature with thoughtfully crafted
-              products designed to elevate your everyday living. From
-              sustainable essentials to unique lifestyle finds — we’re all about
-              going green in style.
+              Karobhar connects you with products made with passion and
+              businesses built with dreams. Discover unique finds, support local
+              entrepreneurs, and shop with purpose.
             </p>
           </div>
           <div className="Specials spe1">
             <h4>Specials</h4>
             <div className="links">
-              <a href="/search" target="_blank" >Shop</a>
+              <a href="/search" target="_blank">
+                Shop
+              </a>
               <Link to="/vendors">Makers</Link>
               <Link to="/stories">Stories</Link>
             </div>
@@ -46,7 +45,7 @@ function Footer() {
             <div className="links">
               <Link to="/cookies"> Cookies Policy </Link>
               <Link to="/termsCondition"> Terms & Condition</Link>
-              <Link to="/refundPolicy" >Refund Policy</Link>
+              <Link to="/refundPolicy">Refund Policy</Link>
             </div>
           </div>
           <div className="Specials spe4">

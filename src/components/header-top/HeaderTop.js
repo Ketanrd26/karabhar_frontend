@@ -134,7 +134,7 @@ function HeaderTop() {
                 </span>
                
               </Link>
-              <a
+              {/* <a
                 href="https://supplier.jungleboosh.com"
                 target="blank"
                 className="border-btn cart-btn"
@@ -143,7 +143,7 @@ function HeaderTop() {
                   <GiHut />
                 </span>
                 <p>Become a Seller </p>
-              </a>
+              </a> */}
               {buyerData ? (
                 <Link className="user_label" to="/buyer-profile">
                   <BiSolidUser /> {buyerData?.Name}

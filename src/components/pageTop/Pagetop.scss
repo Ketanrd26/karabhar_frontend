@@ -1,7 +1,7 @@
 .page_top_parent {
   height: 350px;
   width: 100%;
-  background: url("../../assets/about_top.webp");
+  // background: url("../../assets/about_top.webp");
 
  
   .page_top_cont {
@@ -9,22 +9,30 @@
     align-items: center;
     justify-content: center;
     gap: calc(var(--unit));
-    .left_page_top {
-      width: 50%;
-      padding: 10;
-      display: flex;
-      flex-direction: column;
-      gap: calc(var(--unit) / 2);
-      p{
-        max-width: 50ch;
-      }
-    }
+    flex-direction: column;
 
-    .right_page_top {
-      width: 50%;
+     p{
+        max-width: 100ch;
+        text-align: center;
+        line-height: 140%;
+        
+      }
+
+    // .left_page_top {
+    //   width: 50%;
+    //   padding: 10;
+    //   display: flex;
+    //   flex-direction: column;
+    //   gap: calc(var(--unit) / 2);
+
+     
+    // }
+
+    // .right_page_top {
+    //   width: 50%;
    
     
-    }
+    // }
   }
 }
 

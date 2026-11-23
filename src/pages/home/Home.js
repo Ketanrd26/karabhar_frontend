@@ -34,13 +34,13 @@ function Home() {
       <HeroSection />
 
       {/* <Breadcrum /> */}
-      <TopCategories />
+      {/* <TopCategories /> */}
       <TrendingProducts />
       <FeaturedProducts/>
       <Advertisement />
       <Vendors />
       {/* <Reels /> */}
-      <Reels />
+      {/* <Reels /> */}
       {/* <PopularCategories /> */}
       {/* <Deals /> */}
       {/* <DiscountSection /> */}
